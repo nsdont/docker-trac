@@ -1,5 +1,5 @@
-FROM ubuntu:quantal
-MAINTAINER = Jason M. Mills <jmmills@cpan.org>
+FROM ubuntu:14.04.2
+MAINTAINER = NSDont <haodewanan@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
 RUN apt-get install -y pwgen
@@ -15,7 +15,6 @@ RUN apt-get install -y trac-mastertickets
 RUN apt-get install -y trac-tags
 RUN apt-get install -y trac-diavisview
 RUN apt-get install -y trac-announcer
-RUN apt-get install -y trac-batchmodify
 RUN apt-get install -y trac-graphviz
 RUN apt-get install -y python-flup
 
